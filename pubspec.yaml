@@ -1,0 +1,38 @@
+name: native_splash_screen_example
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+  flutter_native_splash: ^0.2.8
+
+# run: flutter clean && flutter pub get && flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#32b3a4"
+  image: assets/splash_400.png
+  android: true
+  ios: true
+
+  # color: "#ffffff"
+  # image: assets/splash_full.png
+  # color_dark: "#1a1a1a"
+  # image_dark: assets/splash_full.png
+  # android: true
+  # ios: true
+  # android_gravity: fill
+  # ios_content_mode: scaleAspectFill
+
+flutter:
+  uses-material-design: true
